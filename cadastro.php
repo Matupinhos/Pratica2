@@ -15,7 +15,7 @@
         $email_cliente = $_POST['email-cliente'];
         $telefone_cliente = $_POST['telefone-cliente'];
 
-        $sql = "INSERT INTO Clientes (nome_completo, email_cliente, telefone_cliente)
+        $sql = "INSERT INTO Clientes (nome_cliente, email_cliente, telefone_cliente)
         VALUES('$nome_cliente', '$email_cliente', '$telefone_cliente')";
 
         if($conn -> query($sql) === TRUE){
